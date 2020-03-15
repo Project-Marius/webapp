@@ -1,11 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
-import { Layout } from 'antd'
 import TopNav from '../components/topNav'
+import { makeStyles } from '@material-ui/core/styles'
 
-const { Header, Footer, Content } = Layout
-
-const VertLayout = (props) =>  {
+const VertLayout = (props: LayoutProps) =>  {
   return (
     <>
       <Head>
@@ -14,11 +12,8 @@ const VertLayout = (props) =>  {
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Layout>
-        <Header><TopNav/></Header>
-        <Content>Content</Content>
-        <Footer>Footer</Footer>
-      </Layout>
+      <TopNav/>
+      {props.children}
     </>
   )
 }

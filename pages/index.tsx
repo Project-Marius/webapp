@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import VertLayout from '../layouts/vertLayout'
+import SplashLayout from '../layouts/splashLayout'
 
 const Home = () => (
-  <VertLayout title='The Future of Quizbowl - QBHQ'>
+  <SplashLayout title='bruh'>
     bruh
-  </VertLayout>
+  </SplashLayout>
 )
 
 export default Home
