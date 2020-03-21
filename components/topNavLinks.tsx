@@ -32,7 +32,7 @@ const TopNavLinks = ({ title }: TopNavLinksProps) => {
               Learn
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/auth">
             <a className="px-4"><Icon type="user" />Login/Signup</a>
           </Link>
         </div>
